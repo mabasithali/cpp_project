@@ -1,0 +1,32 @@
+[
+    {
+        "label": "CMake: Configure (Debug)",
+        "command": "cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false
+    },
+    {
+        "label": "CMake: Build",
+        "command": "cmake --build build",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false
+    },
+    {
+        "label": "App: Run",
+        "command": "./build/app_bin",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false
+    },
+    {
+        "label": "App: Debug (GDB Terminal)",
+        "command": "gdb -tui ./build/app_bin",
+        "use_new_terminal": true,
+        "allow_concurrent_runs": false
+    },
+    {
+        "label": "CMake: Clean",
+        "command": "rm -rf build",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false
+    }
+]

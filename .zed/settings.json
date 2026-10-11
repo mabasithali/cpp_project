@@ -1,0 +1,17 @@
+{
+  "lsp": {
+    "clangd": {
+      "initialization_options": {
+        "fallbackFlags": ["-std=c++20"],
+        "clangdFileStatus": true
+      },
+      "arguments": [
+        "--compile-commands-dir=build",
+        "--header-insertion=iwyu",
+        "--completion-style=detailed",
+        "--background-index"
+      ]
+    }
+  },
+  "format_on_save": "on"
+}

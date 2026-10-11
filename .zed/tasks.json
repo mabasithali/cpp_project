@@ -28,5 +28,17 @@
         "command": "rm -rf build",
         "use_new_terminal": false,
         "allow_concurrent_runs": false
+    },
+    {
+        "label": "CMake: Build Copy Constructor Only",
+        "command": "cmake --build build --target copy_constructor_bin",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false
+    },
+    {
+        "label": "Run: Copy Constructor Demo",
+        "command": "./build/copy_constructor_bin",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false
     }
 ]
